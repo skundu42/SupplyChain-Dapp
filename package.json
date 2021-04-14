@@ -1,0 +1,32 @@
+{
+  "name": "supplychain",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000S\u0000u\u0000p\u0000p\u0000l\u0000y\u0000C\u0000h\u0000a\u0000i\u0000n\u0000-\u0000D\u0000a\u0000p\u0000p\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "lite-server": "^2.6.1",
+    "prettier": "^2.2.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.1",
+    "truffle-hdwallet-provider": "^1.0.17"
+  },
+  "devDependencies": {
+    "purify-css": "^1.2.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skundu42/SupplyChain-Dapp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skundu42/SupplyChain-Dapp/issues"
+  },
+  "homepage": "https://github.com/skundu42/SupplyChain-Dapp#readme"
+}

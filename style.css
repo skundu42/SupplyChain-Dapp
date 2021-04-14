@@ -1,0 +1,79 @@
+body {
+    background-color: #fff;
+    padding: 2em;
+    font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+    color: #212121;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .fetch-table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    /*box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);*/
+  }
+  
+  td.parameter {
+    width: 40%;
+  }
+  
+  .fetch-table td {
+    padding: 6px 8px;
+    border: thin solid #646060;
+  }
+  
+  /* .PO-table tbody tr:nth-of-type(even) {
+    background-color: #baf5ba;
+  } */
+  
+  input {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 10px 0;
+  }
+  
+  .btn-read {
+    width: 20%;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background-color: #21841cb3;
+    font-size: 16px;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .btn-write {
+    width: 20%;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background-color: #d44e00;
+    font-size: 16px;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .form-group {
+    background-color: #0097A7;
+    color: black;
+    width: 50%;
+    padding: 30px;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+  }
+  
+  .form-break {
+    background-color: #fff;
+    color: white;
+    width: 100%;
+    padding: 5px;
+  }

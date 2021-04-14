@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fair Trade Coffee</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">Fair Trade Coffee</h1>
+        <hr>
+        <p style="text-align: center;">Prove the authenticity of coffee using the Ethereum blockchain.</p>
+    </div>
+
+     
+
+    <div id="ftc-harvest">
+        <h2>Product Overview</h2>
+        <!-- Section 1 -->
+        <!-- Convention: data ids for buttons is section number (starting at 1 x 100 + button number) -->   
+        <div class="form-group">
+            <!-- IDs and names here all start with fetch- -->
+            <!-- Fetch all data based on UPC -->
+            UPC
+            <br>
+            <input type="number" id="fetch-upc" name="fetch-upc" value=1><br>
+            <button class="btn-read" id="fetch-button-read" type="button" data-id="101">Fetch Data</button>
+            <br>
+            <table class=fetch-table>
+                <tr>
+                    <td class=parameter>SKU</td>
+                    <td id="fetch-SKU"></td>
+                </tr>
+                <tr>
+                    <td>Current state</td>
+                    <td id="fetch-state"></td>
+                </tr>                
+                <tr>
+                    <td>Origin Farm Name</td>
+                    <td id="fetch-originFarmName"></td>
+                </tr>
+                <tr>
+                    <td>Origin Farm Information</td>
+                    <td id="fetch-originFarmInformation"></td>
+                </tr>
+                <tr>
+                    <td>Origin Farm Latitude</td>
+                    <td id="fetch-originFarmLatitude"></td>
+                </tr>
+                <tr>
+                    <td>Origin Farm Longitude</td>
+                    <td id="fetch-originFarmLongitude"></td>
+                </tr>
+                <tr>
+                    <td>Product Notes</td>
+                    <td id="fetch-productNotes"></td>
+                </tr>
+                <tr>
+                    <td>Product Price</td>
+                    <td id="fetch-productPrice"></td>
+                </tr>
+                <tr>
+                    <td>Current Owner ID</td>
+                    <td id="fetch-ownerID"> </td>
+                </tr>
+                <tr>
+                    <td>Origin Farmer ID</td>
+                    <td id="fetch-originFarmerID"></td>
+                </tr>
+                <tr>
+                    <td>Distributor ID</td>
+                    <td id="fetch-distributorID"></td>
+                </tr>
+                <tr>
+                    <td>Retailer ID</td>
+                    <td id="fetch-retailerID"></td>
+                </tr>
+                <tr>
+                    <td>Consumer ID</td>
+                    <td id="fetch-consumerID"></td>
+                </tr>                
+            </table>
+            
+        </div>
+        <div class=form-break></div>
+        <h2>Enter Product Information and select Supply Chain actions</h2>
+        <!-- Section 2 -->
+        <!-- Convention: data ids for buttons is section number (starting at 2 x 100 + button number) -->   
+        <div class="form-group">            
+            UPC
+            <br>
+            <input type="number" id="upc" name="upc" value=1><br>            
+            Farm Name
+            <br>
+            <input type="text" id="originFarmName" name="originFarmName" value="John Doe"><br>
+            Farm Information
+            <br>
+            <input type="text" id="originFarmInformation" name="originFarmInformation" value="Yarra Valley"><br>
+            Farm Latitude
+            <br>
+            <input type="text" id="originFarmLatitude" name="originFarmLatitude" value="-38.239770"><br>
+            Farm Longitude
+            <br>
+            <input type="text" id="originFarmLongitude" name="originFarmLongitude" value="144.341490"><br>
+            Product Notes
+            <br>
+            <input type="text" id="productNotes" name="productNotes" value="Best beans for Espresso" size="60"><br>
+            <br>
+            <button class="btn-write" id="button" type="button" data-id="201">Harvest</button>
+            <button class="btn-write" id="button" type="button" data-id="202">Process</button>
+            <button class="btn-write" id="button" type="button" data-id="203">Pack</button>
+            <br>
+            Product Price
+            <br>
+            <input type="number" id="productPrice" name="productPrice" value=1>ETH<br>
+            <button class="btn-write" id="button" type="button" data-id="204">ForSale</button>
+            <br>
+            <button class="btn-write" id="button" type="button" data-id="205">Buy</button>
+            <button class="btn-write" id="button" type="button" data-id="206">Ship</button>
+            <button class="btn-write" id="button" type="button" data-id="207">Receive</button>
+            <button class="btn-write" id="button" type="button" data-id="208">Purchase</button>
+        </div>                
+    </div>
+
+    <h2>Transaction History<span id="ftc-history"></span></h2>
+    <div>
+        <ul id="ftc-events">
+            <!-- Events will appear here from app.js -->
+        </ul>
+        <br>
+        <hr>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- <script src="js/web3.min.js"></script> -->
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
